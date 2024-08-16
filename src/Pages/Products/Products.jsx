@@ -89,9 +89,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto">
-        <h1>Product: {sortedProducts.length}</h1>
-
+      <div className="max-w-7xl mx-auto my-10">
         <div className="flex justify-between items-center">
           {/* Search input field */}
           <input
