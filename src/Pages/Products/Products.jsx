@@ -34,7 +34,7 @@ const Products = () => {
           page: currentPage,
           limit: pageSize,
           category: selectedCategory,
-          brand: selectedBrand,
+          brandName: selectedBrand,
           minPrice,
           maxPrice,
         },
