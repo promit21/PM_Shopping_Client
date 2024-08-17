@@ -55,39 +55,39 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar"
-            >
-              <div className="w-10 rounded-full">
-                {user ? (
-                  <img className="h-10 rounded-full" src={user.photoURL} />
-                ) : (
-                  <img
-                    className="rounded-full h-10"
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                )}
-              </div>
+          <div className="flex gap-8">
+            <div className="w-10 rounded-full">
+              {user ? (
+                <img
+                  className="h-10 rounded-full"
+                  src={user.photoURL}
+                  alt="Photo"
+                />
+              ) : (
+                <img
+                  className="rounded-full h-10"
+                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  alt="Photo"
+                />
+              )}
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                {user ? (
-                  <button onClick={handleSignOut} className="btn">
-                    Log Out
+
+            <div>
+              {user ? (
+                <button
+                  onClick={handleSignOut}
+                  className="btn text-yellow-400 bg-slate-700"
+                >
+                  Log Out
+                </button>
+              ) : (
+                <Link to="/logIn">
+                  <button className="btn text-yellow-500 bg-slate-700">
+                    Log in
                   </button>
-                ) : (
-                  <Link to="/logIn">
-                    <button className="btn">Log in</button>
-                  </Link>
-                )}
-              </li>
-            </ul>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>
