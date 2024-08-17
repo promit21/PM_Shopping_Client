@@ -1,6 +1,9 @@
-import { Children, createContext, useState } from "react";
+import { createContext, useState } from "react";
+import { getAuth } from "firebase/auth";
+import { app } from "../Firebase/firebase.config";
 
-const AuthContext = createContext(null);
+export const AuthContext = createContext(null);
+const auth = getAuth(app);
 
 const AuthProvider = ({ Children }) => {
   const [user, setUser] = useState(null);

@@ -162,8 +162,8 @@ const Products = () => {
             className="mr-2 p-2 border rounded"
           />
 
-          <button onClick={handleFilterChange} className="p-2 border rounded">
-            Apply Filters
+          <button onClick={handleFilterChange} className="btn px-6 border rounded">
+           Click for Search
           </button>
         </div>
 
