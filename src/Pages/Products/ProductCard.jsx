@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
       <div className="card-body">
         <h2 className="card-title">
           {productName}
-          <div className="badge badge-secondary">{brandName}</div>
+          <div className="badge bg-yellow-400">{brandName}</div>
         </h2>
         <p>{description}</p>
         <p>$ {price}</p>

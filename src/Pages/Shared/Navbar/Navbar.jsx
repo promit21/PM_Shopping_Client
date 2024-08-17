@@ -21,7 +21,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-300 px-10">
+      <div className="navbar bg-base-300 lg:px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,14 +48,14 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="text-xl font-bold">
-            PM<span className="text-3xl text-yellow-500">S</span>hopping
+            PM<span className="lg:text-3xl text-yellow-500">S</span>hopping
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <div className="flex gap-8">
+          <div className="flex gap-5">
             <div className="w-10 rounded-full">
               {user ? (
                 <img

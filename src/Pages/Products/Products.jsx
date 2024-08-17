@@ -29,7 +29,7 @@ const Products = () => {
 
   const fetchProducts = () => {
     axios
-      .get("http://localhost:5000/products", {
+      .get("https://server-site-lovat.vercel.app/products", {
         params: {
           page: currentPage,
           limit: pageSize,
@@ -90,7 +90,7 @@ const Products = () => {
   return (
     <>
       <div className="max-w-7xl mx-auto my-10">
-        <div className="flex justify-between items-center">
+        <div className="lg:flex justify-between items-center">
           {/* Search input field */}
           <input
             type="text"
@@ -167,7 +167,7 @@ const Products = () => {
           </button>
         </div>
 
-        <div className="flex flex-wrap gap-6 justify-center items-center my-8">
+        <div className="lg:flex flex-wrap gap-6 justify-center items-center my-8">
           {sortedProducts.length > 0 ? (
             sortedProducts.map((product) => (
               <ProductCard key={product._id} product={product}></ProductCard>
