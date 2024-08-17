@@ -12,8 +12,8 @@ const ProductCard = ({ product }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-xl max-md">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        <img className="h-80 w-96"
+          src={productImage}
           alt="Shoes"
         />
       </figure>

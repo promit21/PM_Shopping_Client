@@ -8,7 +8,7 @@ const Products = () => {
   const [sortCriteria, setSortCriteria] = useState("priceLowToHigh");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(9);
 
   // Filters
   const [selectedCategory, setSelectedCategory] = useState("");

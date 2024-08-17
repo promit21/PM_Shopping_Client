@@ -34,12 +34,7 @@ const LogIn = () => {
 
   return (
     <div className="w-[80%] mx-auto my-10">
-      <div
-        className="hero hero-overlay bg-opacity-50 p-10 bg-base-200 rounded-xl"
-        style={{
-          backgroundImage: "url(https://i.ibb.co/c3JmKS4/LoginBg.jpg)",
-        }}
-      >
+      <div className="hero hero-overlay bg-opacity-50 p-10 bg-base-200 rounded-xl">
         <div className="hero-content flex-col lg:flex-row">
           <div className="">
             <div className=""></div>
