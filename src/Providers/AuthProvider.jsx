@@ -53,18 +53,15 @@ const AuthProvider = ({ children }) => {
       return signInWithPopup(auth, googleProvider)
     }
   
-    const facebookSignIn = () => {
-      setLoading(true);
-      return signInWithPopup(auth, facebookAuthProvider);
-    }
-  
+    
     const userInfo = {
       user,
+      setUser,
       createUser,
       logInUser,
       logOutUser,
       googleLogIn,
-      facebookSignIn,
+      
       loading,
     };
   

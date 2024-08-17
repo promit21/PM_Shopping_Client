@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 const LogIn = () => {
@@ -32,11 +32,6 @@ const LogIn = () => {
     navigate(location?.state ? location.state : "/");
   };
 
-  const handleFacebookSignIn = () => {
-    facebookSignIn().then((result) => console.log(result.user));
-
-    navigate(location?.state ? location.state : "/");
-  };
   return (
     <div className="w-[80%] mx-auto my-10">
       <div
@@ -95,6 +90,14 @@ const LogIn = () => {
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
+              </div>
+              <div className="mb-10">
+                <p className="text-center">
+                  If don't have an account?{" "}
+                  <Link className="text-blue-700 font-bold" to="/register">
+                    Register Now!
+                  </Link>
+                </p>
               </div>
               <div className="divider divider-accent">or sign up with</div>
               <div className="flex gap-5 justify-center">
